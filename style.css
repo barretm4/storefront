@@ -8,6 +8,7 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #333;
     color: #fff;
@@ -16,8 +17,17 @@ header {
 
 header ul {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-grow: 2;
+    list-style-type: none;
 }
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+    color: lightgray;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
